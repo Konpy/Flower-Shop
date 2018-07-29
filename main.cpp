@@ -55,16 +55,17 @@ int main()
     cout << "Luego le preguntara al usuario a poner un nuevo nombre para la flor,\ncantidad de flores y su precio." << endl;
     cout << "\nOprime ENTER para comenzar." << endl;
     cin.get();//Pausa el programa
-    cout << "*---------------------------------------------------------------------------*\n";
-    cout << "La flor que se demuestra en este programa es la " << ct.getName() << endl;
-    cout << "Tenemos " << ct.getNumber() << " y cuestan $" << ct.getPrice() << "." << endl;
-    cout << "*---------------------------------------------------------------------------*\n" << endl;
-    //------------------------------------------------------------------------------------------------------
-    //Input del Usuario
-    cout << "Ahora usted puede insertar el nombre de la planta,\nsu cantidad, y el precio de la flor.\n" << endl;
-    //While loop valida si el usuario desea intentar de poner los datos otraves desde el principio.
+
     while(loop)
     {
+        cout << "*---------------------------------------------------------------------------*\n";
+        cout << "La flor que se demuestra en este programa es " << ct.getName() << endl;
+        cout << "Tenemos " << ct.getNumber() << " y cuestan $" << ct.getPrice() << "." << endl;
+        cout << "*---------------------------------------------------------------------------*\n" << endl;
+        //------------------------------------------------------------------------------------------------------
+        //Input del Usuario
+        cout << "Ahora usted puede insertar el nombre de la planta,\nsu cantidad, y el precio de la flor.\n" << endl;
+        //While loop valida si el usuario desea intentar de poner los datos otraves desde el principio.
         bool choice = true;
         cout << "Para comenzar entre el nombre de la flor: ";
         getline(cin,newName);
